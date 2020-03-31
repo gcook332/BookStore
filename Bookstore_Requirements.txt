@@ -1,0 +1,6 @@
+1. Check out a book - give return date
+2. Look up books by genre and how many there are.
+3. Return a book
+4. Buy books
+5. Apply a coupon
+6. Purchase student ID
