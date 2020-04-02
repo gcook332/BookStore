@@ -10,27 +10,16 @@ public class Store {
 		Scanner input = new Scanner(System.in);
 		StoreClass obj = new StoreClass();
 		
-		
 		obj.Greeting();
-		System.out.println("Enter an option: ");
-		int option = input.nextInt();
 		
-		if(option == 1) {
-			System.out.println("You selected check out a book\n");
+		if(obj.Option(input.nextInt()) == 1) {
+			System.out.println("sup fam");
+			System.out.println("What book are you checking out?");
+			 obj.BookList(input.next());
 		}
-		if(option == 2) {
-			System.out.println("You selected books by genre\n");
-		}
-		if(option == 3) {
-			System.out.println("You selected return a book\n");
-		}
-		if(option == 4) {
-			//System.out.println("Quit\n");
-			System.exit(0);
-		}
-		
 		
 	
 	}
-
 }
+
+
