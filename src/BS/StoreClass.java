@@ -29,7 +29,7 @@ public class StoreClass {
 	public int Option(int x) {
 		//System.out.println("Fiction Non-fiction, Erotic, Bible, Sex");
 		if(x == 1) {
-			System.out.println("You selected check out a book\n");
+			System.out.println("Select a book from the list\n");
 		}
 		else if(x == 2) {
 			System.out.println("You selected books by genre\n");
@@ -48,7 +48,8 @@ public class StoreClass {
 		return x;
 		
 	}
-	public String BookList(String Book) {
+	/*public String BookList(String Book) {
+		String x = "Not found";
 		
 		ArrayList<String> Books = new ArrayList();
 		Books.add("War and Peace");
@@ -56,13 +57,25 @@ public class StoreClass {
 		Books.add("In search of lost time");
 		Books.add("One Hundred Years of Solitude");
 		
-		for(int i = 0; i < Books.size(); i++) {
-			if(Book == Books.get(i)) {
-				System.out.println("found it");
-				return Books.get(i);
+		for(String i : Books) {
+			if(Book == i) {
+				return Book;
 			}
 		}
-		return Book;
- 	}
+		return x;
+ 	}*/
+	public void BookList() {
+		ArrayList<String> Books = new ArrayList();
+		Books.add("War and Peace");
+		Books.add("The Great Gatsby");
+		Books.add("In search of lost time");
+		Books.add("One Hundred Years of Solitude");
+		
+		System.out.println(Books);
+		/*for(String i : Books) {
+			System.out.println(i);
+		}*/
+	}
+	
 	
 }
